@@ -5,351 +5,351 @@ public class AllergiesTests
     [Fact]
     public void Testing_for_eggs_allergy_not_allergic_to_anything()
     {
-        var sut = new Allergies(0);
-        Assert.False(sut.IsAllergicTo(Allergen.Eggs));
+        var sut = new AllergiesMy(0);
+        Assert.False(sut.IsAllergicTo(Allergens.Eggs));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_eggs_allergy_allergic_only_to_eggs()
     {
-        var sut = new Allergies(1);
-        Assert.True(sut.IsAllergicTo(Allergen.Eggs));
+        var sut = new AllergiesMy(1);
+        Assert.True(sut.IsAllergicTo(Allergens.Eggs));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_eggs_allergy_allergic_to_eggs_and_something_else()
     {
-        var sut = new Allergies(3);
-        Assert.True(sut.IsAllergicTo(Allergen.Eggs));
+        var sut = new AllergiesMy(3);
+        Assert.True(sut.IsAllergicTo(Allergens.Eggs));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_eggs_allergy_allergic_to_something_but_not_eggs()
     {
-        var sut = new Allergies(2);
-        Assert.False(sut.IsAllergicTo(Allergen.Eggs));
+        var sut = new AllergiesMy(2);
+        Assert.False(sut.IsAllergicTo(Allergens.Eggs));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_eggs_allergy_allergic_to_everything()
     {
-        var sut = new Allergies(255);
-        Assert.True(sut.IsAllergicTo(Allergen.Eggs));
+        var sut = new AllergiesMy(255);
+        Assert.True(sut.IsAllergicTo(Allergens.Eggs));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_peanuts_allergy_not_allergic_to_anything()
     {
-        var sut = new Allergies(0);
-        Assert.False(sut.IsAllergicTo(Allergen.Peanuts));
+        var sut = new AllergiesMy(0);
+        Assert.False(sut.IsAllergicTo(Allergens.Peanuts));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_peanuts_allergy_allergic_only_to_peanuts()
     {
-        var sut = new Allergies(2);
-        Assert.True(sut.IsAllergicTo(Allergen.Peanuts));
+        var sut = new AllergiesMy(2);
+        Assert.True(sut.IsAllergicTo(Allergens.Peanuts));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_peanuts_allergy_allergic_to_peanuts_and_something_else()
     {
-        var sut = new Allergies(7);
-        Assert.True(sut.IsAllergicTo(Allergen.Peanuts));
+        var sut = new AllergiesMy(7);
+        Assert.True(sut.IsAllergicTo(Allergens.Peanuts));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_peanuts_allergy_allergic_to_something_but_not_peanuts()
     {
-        var sut = new Allergies(5);
-        Assert.False(sut.IsAllergicTo(Allergen.Peanuts));
+        var sut = new AllergiesMy(5);
+        Assert.False(sut.IsAllergicTo(Allergens.Peanuts));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_peanuts_allergy_allergic_to_everything()
     {
-        var sut = new Allergies(255);
-        Assert.True(sut.IsAllergicTo(Allergen.Peanuts));
+        var sut = new AllergiesMy(255);
+        Assert.True(sut.IsAllergicTo(Allergens.Peanuts));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_shellfish_allergy_not_allergic_to_anything()
     {
-        var sut = new Allergies(0);
-        Assert.False(sut.IsAllergicTo(Allergen.Shellfish));
+        var sut = new AllergiesMy(0);
+        Assert.False(sut.IsAllergicTo(Allergens.Shellfish));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_shellfish_allergy_allergic_only_to_shellfish()
     {
-        var sut = new Allergies(4);
-        Assert.True(sut.IsAllergicTo(Allergen.Shellfish));
+        var sut = new AllergiesMy(4);
+        Assert.True(sut.IsAllergicTo(Allergens.Shellfish));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_shellfish_allergy_allergic_to_shellfish_and_something_else()
     {
-        var sut = new Allergies(14);
-        Assert.True(sut.IsAllergicTo(Allergen.Shellfish));
+        var sut = new AllergiesMy(14);
+        Assert.True(sut.IsAllergicTo(Allergens.Shellfish));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_shellfish_allergy_allergic_to_something_but_not_shellfish()
     {
-        var sut = new Allergies(10);
-        Assert.False(sut.IsAllergicTo(Allergen.Shellfish));
+        var sut = new AllergiesMy(10);
+        Assert.False(sut.IsAllergicTo(Allergens.Shellfish));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_shellfish_allergy_allergic_to_everything()
     {
-        var sut = new Allergies(255);
-        Assert.True(sut.IsAllergicTo(Allergen.Shellfish));
+        var sut = new AllergiesMy(255);
+        Assert.True(sut.IsAllergicTo(Allergens.Shellfish));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_strawberries_allergy_not_allergic_to_anything()
     {
-        var sut = new Allergies(0);
-        Assert.False(sut.IsAllergicTo(Allergen.Strawberries));
+        var sut = new AllergiesMy(0);
+        Assert.False(sut.IsAllergicTo(Allergens.Strawberries));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_strawberries_allergy_allergic_only_to_strawberries()
     {
-        var sut = new Allergies(8);
-        Assert.True(sut.IsAllergicTo(Allergen.Strawberries));
+        var sut = new AllergiesMy(8);
+        Assert.True(sut.IsAllergicTo(Allergens.Strawberries));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_strawberries_allergy_allergic_to_strawberries_and_something_else()
     {
-        var sut = new Allergies(28);
-        Assert.True(sut.IsAllergicTo(Allergen.Strawberries));
+        var sut = new AllergiesMy(28);
+        Assert.True(sut.IsAllergicTo(Allergens.Strawberries));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_strawberries_allergy_allergic_to_something_but_not_strawberries()
     {
-        var sut = new Allergies(20);
-        Assert.False(sut.IsAllergicTo(Allergen.Strawberries));
+        var sut = new AllergiesMy(20);
+        Assert.False(sut.IsAllergicTo(Allergens.Strawberries));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_strawberries_allergy_allergic_to_everything()
     {
-        var sut = new Allergies(255);
-        Assert.True(sut.IsAllergicTo(Allergen.Strawberries));
+        var sut = new AllergiesMy(255);
+        Assert.True(sut.IsAllergicTo(Allergens.Strawberries));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_tomatoes_allergy_not_allergic_to_anything()
     {
-        var sut = new Allergies(0);
-        Assert.False(sut.IsAllergicTo(Allergen.Tomatoes));
+        var sut = new AllergiesMy(0);
+        Assert.False(sut.IsAllergicTo(Allergens.Tomatoes));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_tomatoes_allergy_allergic_only_to_tomatoes()
     {
-        var sut = new Allergies(16);
-        Assert.True(sut.IsAllergicTo(Allergen.Tomatoes));
+        var sut = new AllergiesMy(16);
+        Assert.True(sut.IsAllergicTo(Allergens.Tomatoes));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_tomatoes_allergy_allergic_to_tomatoes_and_something_else()
     {
-        var sut = new Allergies(56);
-        Assert.True(sut.IsAllergicTo(Allergen.Tomatoes));
+        var sut = new AllergiesMy(56);
+        Assert.True(sut.IsAllergicTo(Allergens.Tomatoes));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_tomatoes_allergy_allergic_to_something_but_not_tomatoes()
     {
-        var sut = new Allergies(40);
-        Assert.False(sut.IsAllergicTo(Allergen.Tomatoes));
+        var sut = new AllergiesMy(40);
+        Assert.False(sut.IsAllergicTo(Allergens.Tomatoes));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_tomatoes_allergy_allergic_to_everything()
     {
-        var sut = new Allergies(255);
-        Assert.True(sut.IsAllergicTo(Allergen.Tomatoes));
+        var sut = new AllergiesMy(255);
+        Assert.True(sut.IsAllergicTo(Allergens.Tomatoes));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_chocolate_allergy_not_allergic_to_anything()
     {
-        var sut = new Allergies(0);
-        Assert.False(sut.IsAllergicTo(Allergen.Chocolate));
+        var sut = new AllergiesMy(0);
+        Assert.False(sut.IsAllergicTo(Allergens.Chocolate));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_chocolate_allergy_allergic_only_to_chocolate()
     {
-        var sut = new Allergies(32);
-        Assert.True(sut.IsAllergicTo(Allergen.Chocolate));
+        var sut = new AllergiesMy(32);
+        Assert.True(sut.IsAllergicTo(Allergens.Chocolate));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_chocolate_allergy_allergic_to_chocolate_and_something_else()
     {
-        var sut = new Allergies(112);
-        Assert.True(sut.IsAllergicTo(Allergen.Chocolate));
+        var sut = new AllergiesMy(112);
+        Assert.True(sut.IsAllergicTo(Allergens.Chocolate));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_chocolate_allergy_allergic_to_something_but_not_chocolate()
     {
-        var sut = new Allergies(80);
-        Assert.False(sut.IsAllergicTo(Allergen.Chocolate));
+        var sut = new AllergiesMy(80);
+        Assert.False(sut.IsAllergicTo(Allergens.Chocolate));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_chocolate_allergy_allergic_to_everything()
     {
-        var sut = new Allergies(255);
-        Assert.True(sut.IsAllergicTo(Allergen.Chocolate));
+        var sut = new AllergiesMy(255);
+        Assert.True(sut.IsAllergicTo(Allergens.Chocolate));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_pollen_allergy_not_allergic_to_anything()
     {
-        var sut = new Allergies(0);
-        Assert.False(sut.IsAllergicTo(Allergen.Pollen));
+        var sut = new AllergiesMy(0);
+        Assert.False(sut.IsAllergicTo(Allergens.Pollen));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_pollen_allergy_allergic_only_to_pollen()
     {
-        var sut = new Allergies(64);
-        Assert.True(sut.IsAllergicTo(Allergen.Pollen));
+        var sut = new AllergiesMy(64);
+        Assert.True(sut.IsAllergicTo(Allergens.Pollen));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_pollen_allergy_allergic_to_pollen_and_something_else()
     {
-        var sut = new Allergies(224);
-        Assert.True(sut.IsAllergicTo(Allergen.Pollen));
+        var sut = new AllergiesMy(224);
+        Assert.True(sut.IsAllergicTo(Allergens.Pollen));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_pollen_allergy_allergic_to_something_but_not_pollen()
     {
-        var sut = new Allergies(160);
-        Assert.False(sut.IsAllergicTo(Allergen.Pollen));
+        var sut = new AllergiesMy(160);
+        Assert.False(sut.IsAllergicTo(Allergens.Pollen));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_pollen_allergy_allergic_to_everything()
     {
-        var sut = new Allergies(255);
-        Assert.True(sut.IsAllergicTo(Allergen.Pollen));
+        var sut = new AllergiesMy(255);
+        Assert.True(sut.IsAllergicTo(Allergens.Pollen));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_cats_allergy_not_allergic_to_anything()
     {
-        var sut = new Allergies(0);
-        Assert.False(sut.IsAllergicTo(Allergen.Cats));
+        var sut = new AllergiesMy(0);
+        Assert.False(sut.IsAllergicTo(Allergens.Cats));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_cats_allergy_allergic_only_to_cats()
     {
-        var sut = new Allergies(128);
-        Assert.True(sut.IsAllergicTo(Allergen.Cats));
+        var sut = new AllergiesMy(128);
+        Assert.True(sut.IsAllergicTo(Allergens.Cats));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_cats_allergy_allergic_to_cats_and_something_else()
     {
-        var sut = new Allergies(192);
-        Assert.True(sut.IsAllergicTo(Allergen.Cats));
+        var sut = new AllergiesMy(192);
+        Assert.True(sut.IsAllergicTo(Allergens.Cats));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_cats_allergy_allergic_to_something_but_not_cats()
     {
-        var sut = new Allergies(64);
-        Assert.False(sut.IsAllergicTo(Allergen.Cats));
+        var sut = new AllergiesMy(64);
+        Assert.False(sut.IsAllergicTo(Allergens.Cats));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Testing_for_cats_allergy_allergic_to_everything()
     {
-        var sut = new Allergies(255);
-        Assert.True(sut.IsAllergicTo(Allergen.Cats));
+        var sut = new AllergiesMy(255);
+        Assert.True(sut.IsAllergicTo(Allergens.Cats));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void No_allergies()
     {
-        var sut = new Allergies(0);
+        var sut = new AllergiesMy(0);
         Assert.Empty(sut.List());
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Just_eggs()
     {
-        var sut = new Allergies(1);
-        var expected = new[] { Allergen.Eggs };
+        var sut = new AllergiesMy(1);
+        var expected = new[] { Allergens.Eggs };
         Assert.Equal(expected, sut.List());
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Just_peanuts()
     {
-        var sut = new Allergies(2);
-        var expected = new[] { Allergen.Peanuts };
+        var sut = new AllergiesMy(2);
+        var expected = new[] { Allergens.Peanuts };
         Assert.Equal(expected, sut.List());
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Just_strawberries()
     {
-        var sut = new Allergies(8);
-        var expected = new[] { Allergen.Strawberries };
+        var sut = new AllergiesMy(8);
+        var expected = new[] { Allergens.Strawberries };
         Assert.Equal(expected, sut.List());
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Eggs_and_peanuts()
     {
-        var sut = new Allergies(3);
-        var expected = new[] { Allergen.Eggs, Allergen.Peanuts };
+        var sut = new AllergiesMy(3);
+        var expected = new[] { Allergens.Eggs, Allergens.Peanuts };
         Assert.Equal(expected, sut.List());
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void More_than_eggs_but_not_peanuts()
     {
-        var sut = new Allergies(5);
-        var expected = new[] { Allergen.Eggs, Allergen.Shellfish };
+        var sut = new AllergiesMy(5);
+        var expected = new[] { Allergens.Eggs, Allergens.Shellfish };
         Assert.Equal(expected, sut.List());
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Lots_of_stuff()
     {
-        var sut = new Allergies(248);
-        var expected = new[] { Allergen.Strawberries, Allergen.Tomatoes, Allergen.Chocolate, Allergen.Pollen, Allergen.Cats };
+        var sut = new AllergiesMy(248);
+        var expected = new[] { Allergens.Strawberries, Allergens.Tomatoes, Allergens.Chocolate, Allergens.Pollen, Allergens.Cats };
         Assert.Equal(expected, sut.List());
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Everything()
     {
-        var sut = new Allergies(255);
-        var expected = new[] { Allergen.Eggs, Allergen.Peanuts, Allergen.Shellfish, Allergen.Strawberries, Allergen.Tomatoes, Allergen.Chocolate, Allergen.Pollen, Allergen.Cats };
+        var sut = new AllergiesMy(255);
+        var expected = new[] { Allergens.Eggs, Allergens.Peanuts, Allergens.Shellfish, Allergens.Strawberries, Allergens.Tomatoes, Allergens.Chocolate, Allergens.Pollen, Allergens.Cats };
         Assert.Equal(expected, sut.List());
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void No_allergen_score_parts()
     {
-        var sut = new Allergies(509);
-        var expected = new[] { Allergen.Eggs, Allergen.Shellfish, Allergen.Strawberries, Allergen.Tomatoes, Allergen.Chocolate, Allergen.Pollen, Allergen.Cats };
+        var sut = new AllergiesMy(509);
+        var expected = new[] { Allergens.Eggs, Allergens.Shellfish, Allergens.Strawberries, Allergens.Tomatoes, Allergens.Chocolate, Allergens.Pollen, Allergens.Cats };
         Assert.Equal(expected, sut.List());
     }
 }
